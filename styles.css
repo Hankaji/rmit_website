@@ -1,0 +1,60 @@
+.top {
+    text-align: center;
+    border-style: solid;
+    background: linear-gradient(90deg, #000000, #FFFFFF, #000000)
+}
+.first {
+    background: rgb(0,255,175);
+    background: linear-gradient(90deg, rgba(0,255,175,1) 0%, rgba(2,203,219,1) 25%, rgba(6,128,163,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%);
+}
+
+label {
+    display: block;
+    margin: 0.6rem 0;
+}
+
+fieldset {
+    border: none;
+}
+
+@keyframes expander {
+    from {
+        width: 20%;
+        background-color: blueviolet;
+    }
+    to {
+        width: 98%;
+        background-color: burlywood;
+    }
+}
+
+@keyframes shrinker {
+    from {
+        width: 98%;
+        background-color: burlywood;
+    }
+    to {
+        width: 20%;
+        background-color: blueviolet;
+    }
+}
+
+.hover {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blueviolet;
+    color: #FFFFFF;
+    animation-name: shrinker;
+    animation-duration: 1s;
+}
+
+.hover:hover {
+    animation-name: expander;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
